@@ -65,12 +65,13 @@ public class SetExercise {
 		
 		System.out.println();
 
-		courseA.addAll(courseB);
-		courseA.addAll(courseC);
+		Set<Integer> totalCourseStudents = new HashSet<>(courseA);
+		totalCourseStudents.addAll(courseB);
+		totalCourseStudents.addAll(courseC);
 		
-		System.out.println(courseA.toString());
+		System.out.println(totalCourseStudents.toString());
 		
-		System.out.println("Total students: " + courseA.size());
+		System.out.println("Total students: " + totalCourseStudents.size());
 		
 		sc.close();
 				
